@@ -1,7 +1,7 @@
 {
   "name": "@prop-tech/side-nav",
   "scripts": {
-    "build": "concurrently npm:build:* && npm set-script prepare ''",
+    "build": "concurrently npm:build:*",
     "build:rollup": "rollup -c",
     "start": "rollup -c -w",
     "serve": "sirv dist -c",
@@ -30,6 +30,7 @@
     "svelte-jester": "^2.0.0"
   },
   "dependencies": {
+    "husky": "^9.1.7",
     "single-spa-svelte": "^2.1.1",
     "sirv-cli": "^1.0.14"
   }
