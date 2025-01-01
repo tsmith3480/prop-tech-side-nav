@@ -1,7 +1,7 @@
 {
   "name": "@prop-tech/side-nav",
   "scripts": {
-    "build": "concurrently npm:build:*",
+    "build": "concurrently npm:build:* && npm set-script prepare ''",
     "build:rollup": "rollup -c",
     "start": "rollup -c -w",
     "serve": "sirv dist -c",
